@@ -72,6 +72,24 @@ li:hover::after {
     width: 100%;
 }
 
+.toggle-button {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    right: 20px;
+    top: 40px;
+    width: 30px;
+    height: 20px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+}
+
 .header-text {
     border: 1px solid #fff;
     margin: 6rem 0;
@@ -289,8 +307,53 @@ footer .container {
         padding: 1rem;
     }
 
+    .container-2 {
+        padding: 1rem;
+    }
+
+    .header {
+        background-position: center;
+    }
+
+    .pd-0 {
+        padding: 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .navbar.active {
+        background-color: black;
+    }
+
+    .navbar img {
+        align-self: start;
+    }
+
     .navbar-links {
+        margin: 30px 0;
         display: none;
+        align-self: flex-start;
+    }
+
+    .navbar-links .flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links li {
+        margin: 10px 0;
+        text-transform: uppercase;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links.active {
+        display: flex;
     }
 
     .desktop-img {
