@@ -69,6 +69,7 @@ li:hover::after {
 .navbar {
     padding: 20px 0;
     margin-bottom: 3rem;
+    width: 100%;
 }
 
 .header-text {
@@ -117,6 +118,10 @@ li:hover::after {
     margin: 50px 0 80px 0;
 }
 
+.mobile-img {
+    display: none;
+}
+
 .creations h1 {
     color: black;
     font-size: 48px;
@@ -155,7 +160,8 @@ li:hover::after {
 .grid-content .content-text {
     position: absolute;
     bottom: 40px;
-    width: 80%;
+    /* left: 40px; */
+    width: 100%;
     font-size: 2rem;
     padding-left: 40px;
 }
@@ -180,7 +186,6 @@ li:hover::after {
     align-items: center;
 }
 
-
 .grid {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -204,14 +209,6 @@ footer .container {
     margin: auto;
 }
 
-.footer {
-    margin: 30px 0;
-}
-
-.footer ul {
-    list-style: none;
-}
-
 .footer li {
     margin-left: 0;
     margin-right: 30px;
@@ -227,6 +224,20 @@ footer .container {
     font-weight: bold;
 }
 
+.footer .flex {
+    justify-content: flex-end;
+}
+
+.footer-1 .flex {
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.copyright {
+    text-align: right;
+    margin-top: 30px;
+}
+
 .attribution {
     color: white;
     font-size: 11px;
@@ -236,4 +247,139 @@ footer .container {
 .attribution a {
     color:blue;
     text-decoration: underline;
+}
+
+/* ipad */
+@media (max-width: 1100px) {
+
+    .header-text h1 {
+        font-size: 7vw;
+    }
+
+    .container {
+        margin: 0 auto;
+    }
+
+    .grid-content .content-text {
+        font-size: 2.2vw;
+        padding-left: 20px;
+        bottom: 20px;
+    }
+
+    .showcase img {
+        width: 130%;
+    }
+
+    .showcase-text {
+        padding: 40px 0 0 70px;
+        /* width: 80%; */
+    }
+    
+    .showcase-text h1{
+        font-size: 36px;
+    }
+
+    .showcase-text p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+
+    .mobile-img {
+        display: block;
+    }
+
+    .header-text {
+        padding: 20px;
+        margin-bottom: 7rem;
+    }
+
+    .header-text h1 {
+        font-size: 45px;
+    }
+
+    .grid-content .content-text {
+        font-size: 5vw;
+        width: 50%;
+        bottom: 20px;
+    }
+
+    .showcase {
+        margin-bottom: 2rem;
+    }
+
+    .creations {
+        margin: 0 0 30px 0;
+    }
+
+    .creations h1 {
+        font-size: 2.2rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .showcase img {
+        width: 100%;
+    }
+
+    .showcase-text {
+        padding: 30px 0px;
+        text-align: center;
+        justify-self: center;
+    }
+
+    .showcase-text h1 {
+        font-size: 36px;
+    }
+
+    .showcase-text p {
+        font-size: 1rem;
+    }
+
+    .creations h1{
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-bottom {
+        margin-top: 20px;
+        width: 180px;
+        justify-self: center;
+    }
+
+    .bottom-section {
+        margin-bottom: 3rem;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .footer-1 .flex {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .footer-2 .flex {
+        justify-content: center;
+    }
+
+    .footer li {
+        margin: 10px;
+    }
 }
